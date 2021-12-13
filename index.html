@@ -16,23 +16,26 @@
         background-color: rgb(24, 24, 59);
         display: flex;
         color: whitesmoke;
-        justify-content: space-around;
+    
+        justify-content:space-between ;
+        
       }
 
       .header li {
         list-style: none;
-        padding: 5px;
+        padding: 5px; 
       }
 
       .row-1 {
         background: url(bg.jpg) no-repeat center center/cover;
-        height: 500px;
+        height: auto;
         background-blend-mode: lighten;
       }
 
       .navbar {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        
         align-items: center;
         background-color: rgba(255, 255, 255, 0.7);
         padding: 20px;
@@ -41,15 +44,13 @@
       }
       .navbar li {
         list-style: none;
+        margin-right: 30px;
       }
       .navbar li a {
         text-decoration: none;
         color: black;
       }
-      .item {
-        display: flex;
-       
-      }
+     
       
       .row-2 {
         display: flex;
@@ -64,6 +65,10 @@
         list-style: none;
         margin: 5px;
         color: white;
+        
+      }
+      .row-2-li input{
+        font-size: large;
       }
       .row-3 {
         background-image: url("bg2.jpg");
@@ -100,6 +105,7 @@
       .card-1 img {
         width: 300px;
         margin-top: 4%;
+        height: auto;
       }
       .row-4 {
         display: flex;
@@ -108,19 +114,21 @@
         flex-wrap: wrap;
         background-color: rgb(238, 237, 237);
         
+        
       }
       .card-1 li {
           text-decoration: none;
           list-style: none;
           text-align: center;
           color: white;
-          border-radius: 10px;
+          border-radius: 2px;
          
       }
       .card-1{
        
           border-radius: 10px;
           height: auto;
+          margin-bottom: 30px;
       }
       .row-5{
           height: auto;
@@ -133,12 +141,15 @@
         width: 300px;
         margin: 15px;
         height: 200px;
+        border: 1px solid grey;
 
       }
       .card-1:hover{
         box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.5),
           0 20px 100px 0 rgba(0, 0, 0, 0.19);
+          
       }
+      
      
       
       .card-2{
@@ -200,7 +211,9 @@
   width: 300px;
 }
 
+
 }
+
     </style>
   </head>
 
@@ -208,7 +221,7 @@
     <div class="header">
       <li>Lorem ipsum dolor sit.
       </li>
-      <li>Lorem, ipsum dolor.</li>
+      
       <li>Lorem ipsum dolor sit amet.</li>
     </div>
     <div class="row-1">
@@ -219,71 +232,61 @@
         <li><a href="#">ABOUT US</a></li>
       </div>
       <div class="item">
-        <div class="item-1" style="font-size:x-large; padding: 60px; opacity: 0.7;font-weight: bold; text-align: center;">
-          <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi
+        <div class="item-1" style="font-size:2vh; padding: 60px; opacity: 0.7;font-weight: bold; text-align: center;">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi
           tempore quia magnam aperiam inventore quod totam ratione voluptate?
           Soluta, consequuntur placeat doloribus dolorum itaque nesciunt sed
           voluptas adipisci alias?
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, obcaecati. -->
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, obcaecati.
         </div>
-        <div class="item-2" style="font-size: x-large; padding: 60px; opacity: 0.7;font-weight: bold; text-align: center;">
-          <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
-          doloribus perferendis necessitatibus, soluta optio, nemo blanditiis
-          ratione corrupti repellat deserunt quae laudantium fugiat
-          exercitationem accusantium sint tempore provident ad commodi? -->
-        </div>
+        
       </div>
      
     </div>
     <div class="row-2">
      
       <li class="row-2-li">
-        value1 <br />
-        <input type="text" name="" id="" placeholder="enter value" />
+        check-in time <br />
+        <input type="text" name="" id="" placeholder="enter time" />
       </li>
       <li class="row-2-li">
-        value1 <br /><input
+       check-out time<br /><input
           type="text"
           name=""
           id=""
-          placeholder="enter value"
+          placeholder="enter time"
         />
       </li>
       <li class="row-2-li">
-        value1 <br /><input
+        check-in date <br /><input
           type="text"
           name=""
           id=""
-          placeholder="enter value"
+          placeholder="enter date dd/mm/yyyy"
         />
       </li>
       <li class="row-2-li">
-        value1 <br /><input
+        check-out date <br /><input
           type="text"
           name=""
           id=""
-          placeholder="enter value"
+          placeholder="enter date dd/mm/yyyy"
         />
       </li>
-      <li class="row-2-li">
-        value1 <br /><input
-          type="text"
-          name=""
-          id=""
-          placeholder="enter value"
-        />
-      </li>
+     
       <li
-        class="row-2-li"
+        class="row-2-li srcbtn"
         style="
           text-align: center;
-          background-color: rgb(4, 4, 49);
-          border-radius: 30px;
-          padding: 5px;
+          background: linear-gradient(red, rgb(17, 17, 73), rgb(17, 17, 73), red);
+          border-radius: 5px;
+          padding: 12px;
           width: 100px;
-        "
+          border: 1px solid white;
+          
+         "
       >
-        search
+        SEARCH
       </li>
     </div>
     <div class="row-3">
@@ -346,33 +349,33 @@
         <div class="row-4">
 
       <div class="card-1">
-        <li>
+        <li style="background-image: url('bg.jpg');">
           <img src="bg.jpg" alt="" />
         </li>
-        <li><h1>heading</h1></li>
-        <li>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-        </li>
-      </div>
-      <div  class="card-1">
-        <li>
-          <img src="bg.jpg" alt="" />
-        </li>
-        <li><h1>heading</h1></li>
-        <li>
+        <li style="padding: 5px;"><h1>heading</h1></li>
+        <li style="padding:20px;">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
         </li>
       </div>
       <div class="card-1">
-        <li>
+        <li style="background-image: url('bg.jpg');">
           <img src="bg.jpg" alt="" />
         </li>
-        <li><h1>heading</h1></li>
-        <li>
-          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio</p>
+        <li style="padding: 5px;"><h1>heading</h1></li>
+        <li style="padding:20px;">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
         </li>
       </div>
-    </div>
+      <div class="card-1">
+        <li style="background-image: url('bg.jpg');">
+          <img src="bg.jpg" alt="" />
+        </li>
+        <li style="padding: 5px;"><h1>heading</h1></li>
+        <li style="padding:20px;">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+        </li>
+      </div>
+      </div>
     </div>
     <div class="row-5">
      <h1 style="color: white; background-color: black; width: fit-content; text-align: center; margin: auto;padding:20px;margin-bottom: 0% margin; font-size: xx-large;">
