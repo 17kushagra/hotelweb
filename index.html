@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .header {
+        background-color: rgb(24, 24, 59);
+        display: flex;
+        color: whitesmoke;
+        justify-content: space-around;
+      }
+
+      .header li {
+        list-style: none;
+        padding: 5px;
+      }
+
+      .row-1 {
+        background: url(bg.jpg) no-repeat center center/cover;
+        height: 500px;
+        background-blend-mode: lighten;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        font: bold;
+        font-size: 25px;
+      }
+      .navbar li {
+        list-style: none;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: black;
+      }
+      .item {
+        display: flex;
+       
+      }
+      
+      .row-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, rgb(17, 17, 73), red);
+        padding: 15px;
+      }
+      .row-2-li {
+        text-decoration: none;
+        list-style: none;
+        margin: 5px;
+        color: white;
+      }
+      .row-3 {
+        background-image: url("bg2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background-color: white;
+        width: 300px;
+        margin: 20px;
+        
+        text-align: center;
+        text-decoration: none;
+        list-style: none;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.5),
+          0 20px 100px 0 rgba(0, 0, 0, 0.19);
+      }
+      .card-1 {
+        background-color: rgb(162, 96, 216);
+        margin: 10px;
+        height: 300px;
+        width: 300px;
+
+      }
+      .card-1 img {
+        width: 300px;
+        margin-top: 4%;
+      }
+      .row-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: rgb(238, 237, 237);
+        
+      }
+      .card-1 li {
+          text-decoration: none;
+          list-style: none;
+          text-align: center;
+          color: white;
+          border-radius: 10px;
+         
+      }
+      .card-1{
+       
+          border-radius: 10px;
+      }
+      .row-5{
+          height: auto;
+          background-image: url('https://i.pinimg.com/originals/29/98/56/2998562ff26acd4640b72cab48668f93.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+      }
+      .card:hover{
+        width: 300px;
+        margin: 15px;
+        height: 200px;
+
+      }
+      .card-1:hover{
+        box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.5),
+          0 20px 100px 0 rgba(0, 0, 0, 0.19);
+      }
+     
+      
+      .card-2{
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      width:800px;
+      height: auto;
+      margin: auto;
+      padding: 30px;
+      border-radius: 5px;
+    
+      }
+      .card-2 li {
+        text-decoration: none;
+        list-style: none;
+
+      }
+      .row-6{
+        height:auto;
+        background-color: rgb(200, 142, 241);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .row-6 li{
+        height: 350px;
+        width: 300px; background-color: white;
+        margin: 45px;
+        text-align: center;
+        list-style: none;
+        font-size: x-large;
+        box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.5),
+          0 20px 100px 0 rgba(0, 0, 0, 0.19);
+          border-radius: 10px;
+          flex-wrap: wrap;
+        
+      }
+      @media screen and (max-width: 768px) {
+.navbar{
+  flex-direction: column;
+  padding: 0px;
+}
+.row-2{
+  flex-direction: column;
+}
+.row-3{
+  flex-wrap: wrap;
+}
+.row-4{
+  height: auto;
+  flex-direction: column;
+  
+}
+.header li{
+  font-size: small;
+}
+.card-2{
+  width: 300px;
+}
+
+}
+    </style>
+  </head>
+
+  
+    <div class="header">
+      <li>Lorem ipsum dolor sit.
+      </li>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+    </div>
+    <div class="row-1">
+      <div class="navbar">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">VENUE</a></li>
+        <li><a href="#">HOTELS</a></li>
+        <li><a href="#">ABOUT US</a></li>
+      </div>
+      <div class="item">
+        <div class="item-1" style="font-size:x-large; padding: 60px; opacity: 0.7;font-weight: bold; text-align: center;">
+          <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi
+          tempore quia magnam aperiam inventore quod totam ratione voluptate?
+          Soluta, consequuntur placeat doloribus dolorum itaque nesciunt sed
+          voluptas adipisci alias?
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, obcaecati. -->
+        </div>
+        <div class="item-2" style="font-size: x-large; padding: 60px; opacity: 0.7;font-weight: bold; text-align: center;">
+          <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
+          doloribus perferendis necessitatibus, soluta optio, nemo blanditiis
+          ratione corrupti repellat deserunt quae laudantium fugiat
+          exercitationem accusantium sint tempore provident ad commodi? -->
+        </div>
+      </div>
+     
+    </div>
+    <div class="row-2">
+     
+      <li class="row-2-li">
+        value1 <br />
+        <input type="text" name="" id="" placeholder="enter value" />
+      </li>
+      <li class="row-2-li">
+        value1 <br /><input
+          type="text"
+          name=""
+          id=""
+          placeholder="enter value"
+        />
+      </li>
+      <li class="row-2-li">
+        value1 <br /><input
+          type="text"
+          name=""
+          id=""
+          placeholder="enter value"
+        />
+      </li>
+      <li class="row-2-li">
+        value1 <br /><input
+          type="text"
+          name=""
+          id=""
+          placeholder="enter value"
+        />
+      </li>
+      <li class="row-2-li">
+        value1 <br /><input
+          type="text"
+          name=""
+          id=""
+          placeholder="enter value"
+        />
+      </li>
+      <li
+        class="row-2-li"
+        style="
+          text-align: center;
+          background-color: rgb(4, 4, 49);
+          border-radius: 30px;
+          padding: 5px;
+          width: 100px;
+        "
+      >
+        search
+      </li>
+    </div>
+    <div class="row-3">
+      <div class="card">
+        
+        <br>
+        <br>
+        <li>logo</li>
+        <br /><br />
+        <li>heading</li>
+        <br />
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+          illum.<br><br>
+        </li>
+      </div>
+      <div class="card"><br>
+        <br>
+        
+        <li>logo</li>
+        <br /><br />
+        <li>heading</li>
+        <br />
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+          illum <br><br>
+        </li>
+      </div>
+      <div class="card"><br>
+        
+        <br>
+        <li>logo</li>
+        <br /><br />
+        <li>heading</li>
+        <br />
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+          illum.<br><br>
+        </li>
+      </div>
+      <div class="card"><br>
+        
+        <br>
+        <li>logo</li>
+        <br /><br />
+        <li>heading</li>
+        <br />
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+          illum.<br><br>
+        </li>
+      </div>
+    </div>
+    <div class="row-40">
+        <DIV style="text-align: center; background-color: rgb(238, 237, 237);">
+<br>
+<br>
+            <h1>POPULAR OFFERS</h1>
+        </DIV>
+        <div class="row-4">
+
+      <div class="card-1">
+        <li>
+          <img src="bg.jpg" alt="" />
+        </li>
+        <li><h1>heading</h1></li>
+        <li>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio,
+          itaque!
+        </li>
+      </div>
+      <div  class="card-1">
+        <li>
+          <img src="bg.jpg" alt="" />
+        </li>
+        <li><h1>heading</h1></li>
+        <li>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio,
+          itaque!
+        </li>
+      </div>
+      <div class="card-1">
+        <li>
+          <img src="bg.jpg" alt="" />
+        </li>
+        <li><h1>heading</h1></li>
+        <li>
+          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio,
+          itaque!</p>
+        </li>
+      </div>
+    </div>
+    </div>
+    <div class="row-5">
+     <h1 style="color: white; background-color: black; width: fit-content; text-align: center; margin: auto;padding:20px;margin-bottom: 0% margin; font-size: xx-large;">
+        <span><b>DEALS OF THE DAY</b></span>
+     </h1>
+     <div class="card-2"  >
+         <li><h1>Lorem, ipsum dolor.</h1> </li><br>
+         <li>helloim the main content</li><br>
+         <li><h3>lorem</h3></li>
+     </div>
+     <br><br>
+     <br>
+    </div>
+    <div>
+      <h1 style="text-align: center;padding: 10px;background-color: rgb(200, 142, 241); padding-top: 40px;padding-bottom: 0px;">EXPLORE INDIA</h1>
+    </div>
+    <div class="row-6">
+       
+      <li style="background-image: url('https://i.ytimg.com/vi/UXbqMgorFPw/maxresdefault.jpg');color: white;"><br><br><br><b>MANALI</b>  <br><br><br><br><br><div style="  width:150px;border-radius: 50px; background: linear-gradient(90deg, rgb(17, 17, 73), red);;margin:auto;padding: 10px;text-align: center;"><a style="color: white;text-decoration: none;" href="#">EXPLORE</a></div></li>
+      <li style="color: white;background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0a/06/0b/66/hawa-mahal-travels-day.jpg');"><br><br><br><b>JAIPUR</b><br><br><br><br><br><div style=" width:150px;border-radius: 50px; background: linear-gradient(90deg, rgb(17, 17, 73), red);;margin:auto;padding: 10px;text-align: center;"><a style="color: white;text-decoration: none;" href="#">EXPLORE</a></div></li>
+      <li style="color: white; background-image:url('https://img.wallpapersafari.com/phone/640/1136/83/66/BbyMPS.jpg') ;background-size: cover;"><br><br><br> <b>DELHI</b> <br><br><br><br><br><div style=" width:150px;border-radius: 50px; background: linear-gradient(90deg, rgb(17, 17, 73), red);;margin:auto;padding: 10px;text-align: center;"><a style="color: white;text-decoration: none;" href="#">EXPLORE</a></div></li>
+      
+      
+    </div>
+    <footer style="display: flex; background-color: rgb(13, 13, 54); color: white;">
+      <div class="foot1" style="width: 50%; padding: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, quo, iure adipisci odit aliquid expedita, deleniti ipsam repellendus nesciunt voluptates necessitatibus delectus quisquam ea magni accusantium inventore ab ratione quos.</div>
+      <div class="foot2"style="width: 50%; padding: 20px;;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, harum iste non quis aspernatur assumenda molestiae enim culpa ut similique quaerat velit suscipit. Velit reiciendis, repudiandae tempore at autem distinctio.</div>
+    </footer>
+    <div style="background-color: rgb(255, 51, 15);height:  15px;"></div>
+  </body>
+</html>
